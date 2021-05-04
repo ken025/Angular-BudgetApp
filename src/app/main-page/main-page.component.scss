@@ -41,3 +41,15 @@
             color: lighten($red, 25%);
         }
     }
+
+.add-item{
+    display: flex;
+
+        //centering text
+        justify-content: center;
+        align-items: center;
+
+        .add-item-container{
+            width: 600px;
+        }
+}
