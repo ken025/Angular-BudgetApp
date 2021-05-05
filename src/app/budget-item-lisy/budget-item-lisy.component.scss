@@ -1,48 +1,51 @@
 @import '../../main-styles.scss';
 
-.budget-items-section{
+.budget-items-section {
     display: flex;
     padding: 50px;
 
+    // Horizontally and vertically center flex children
     justify-content: center;
     align-items: center;
-
-    .budget-items-container{
+    
+    .budget-items-container {
         display: flex;
-        max-width: 600px;
+        max-width: 680px;
         height: 100%;
         width: 100%;
 
-        .income-column, .expenses-column{
+        .income-column, .expenses-column {
             display: flex;
             flex-direction: column;
-            flex-basis: 0; //makes columns same size
+            flex-basis: 0; // for the columns to be the same size, regardless of content
             flex-grow: 1;
 
-            h1{
+            h1 {
                 font-family: 'Lato';
                 font-size: 24px;
                 font-weight: 900;
                 text-transform: uppercase;
             }
 
-            .budget-items{
+            .budget-items {
                 display: flex;
                 flex-direction: column;
+
                 margin-top: 20px;
             }
         }
 
-        .income-column{
+        .income-column {
             margin-right: 35px;
 
-            h1{
+            h1 {
                 color: $green;
             }
         }
 
-        .expenses-column{
-            h1{
+        .expenses-column {
+
+            h1 {
                 color: $red;
             }
         }
