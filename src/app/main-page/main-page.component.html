@@ -14,4 +14,4 @@
 
 <hr style='margin-top: 0'>
 
-<app-budget-item-lisy [budgetItems]='budgetItems'></app-budget-item-lisy>
+<app-budget-item-lisy [budgetItems]='budgetItems' (delete)="deleteItem($event)"></app-budget-item-lisy>
