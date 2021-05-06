@@ -10,12 +10,12 @@
 
             <div class="field">
                 <p class="control"> 
-                    <input required class="input" type="text" placeholder="Description" [ngModel]='item.description'>
+                    <input required name='description' class="input" type="text" placeholder="Description" [ngModel]='item.description'>
                 </p>
             </div>
 
             <div clas='field is-narrow'>
-            <button name='description' type='submit' class='button is-primary' [disabled]='!itemForm.valid'> ADD </button>
+            <button  type='submit' class='button is-primary' [disabled]='!itemForm.valid'> ADD </button>
             </div>
 
         </div>
